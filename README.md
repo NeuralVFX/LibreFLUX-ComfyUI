@@ -62,11 +62,13 @@ Generates images using the loaded pipeline.
 ## Requirements
 
 - ComfyUI
+- Libraries:
   - protobuf
   - optimum-quanto
   - diffusers==0.35.2
 - 55 GB VRAM ( with no optimization )
 - 25 GB VRAM ( with **cpu offloading** and **quantize** )
+
 
 
 
