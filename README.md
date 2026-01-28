@@ -1,5 +1,5 @@
 # LibreFlux ComfyUI Nodes
-
+![LibreFlux](https://huggingface.co/neuralvfx/LibreFlux-IP-Adapter-ControlNet/resolve/main/examples/ip_control_example.gif)
 Custom nodes for running [LibreFlux](https://huggingface.co/neuralvfx/LibreFlux-IP-Adapter-ControlNet) with IP Adapter and ControlNet support in ComfyUI.
 
 ## Installation
@@ -64,6 +64,7 @@ Generates images using the loaded pipeline.
 - ComfyUI
 - 55 GB VRAM ( with no optimization )
 - 25 GB VRAM ( with **cpu offloading** and **quantize** )
+
 
 
 
