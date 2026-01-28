@@ -1,5 +1,5 @@
 # LibreFlux ComfyUI Nodes
-
+![LibreFlux](https://huggingface.co/neuralvfx/LibreFlux-IP-Adapter-ControlNet/resolve/main/examples/ip_control_example.gif)
 Custom nodes for running [LibreFlux](https://huggingface.co/neuralvfx/LibreFlux-IP-Adapter-ControlNet) with IP Adapter and ControlNet support in ComfyUI.
 
 ## Installation
@@ -11,7 +11,7 @@ Custom nodes for running [LibreFlux](https://huggingface.co/neuralvfx/LibreFlux-
 2. Install dependencies
    In your ComfyUI conda env:
    ```bash
-   pip install protobuf optimum-quanto
+   pip install protobuf optimum-quanto diffusers==0.35.2
    ```
 
 3. Copy into comfyUI
@@ -19,9 +19,8 @@ Custom nodes for running [LibreFlux](https://huggingface.co/neuralvfx/LibreFlux-
    cp libreflux_nodes ComfyUI/custom_nodes
    ```
 
-## Nodes
-
-### Load LibreFlux Pipeline
+## Load LibreFlux Pipeline Node
+![Load Node](assets/load_node.png)
 
 Loads the LibreFlux model with IP Adapter and ControlNet.
 
@@ -33,9 +32,9 @@ Loads the LibreFlux model with IP Adapter and ControlNet.
 **Outputs:**
 - `LIBRE_FLUX_PIPELINE` — The loaded pipeline object
 
----
 
-### Sample LibreFlux
+## Sample LibreFlux Node
+![Sampler Node](assets/sample_node.png)
 
 Generates images using the loaded pipeline.
 
@@ -61,7 +60,18 @@ Generates images using the loaded pipeline.
 ## Requirements
 
 - ComfyUI
+- Libraries:
+  - protobuf
+  - optimum-quanto
+  - diffusers==0.35.2
 - 55 GB VRAM ( with no optimization )
 - 25 GB VRAM ( with **cpu offloading** and **quantize** )
+
+
+
+
+
+
+
 
 
