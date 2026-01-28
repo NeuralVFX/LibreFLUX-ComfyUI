@@ -36,7 +36,7 @@ Loads the LibreFlux model with IP Adapter and ControlNet.
 ---
 
 ### Sample LibreFlux
-![Sampler Node](assets/sampler_node.png)
+![Sampler Node](assets/sample_node.png)
 
 Generates images using the loaded pipeline.
 
@@ -64,6 +64,7 @@ Generates images using the loaded pipeline.
 - ComfyUI
 - 55 GB VRAM ( with no optimization )
 - 25 GB VRAM ( with **cpu offloading** and **quantize** )
+
 
 
 
